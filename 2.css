@@ -1,0 +1,650 @@
+.a {
+    width: 100%;
+    height: 100%;
+}
+
+/* === BASE HEADING === */
+
+h1 {
+    position: relative;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* === HEADING STYLE #1 === */
+.one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.one h1:before {
+    width: 50px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 48%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+
+.one h1:after {
+    width: 123px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 48%;
+    margin-left: -50px;
+    background-color: #b80000;
+}
+
+
+
+section {
+    position: relative;
+    top: 100px;
+    height: 900px;
+    width: 100%;
+    background-position: 100% 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+
+.image-1 {
+    background-image: url("2nd floor.png");
+}
+
+
+.photo1 {
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo2 {
+    position: absolute;
+    top: 3%;
+    left: 28%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo3 {
+    position: absolute;
+    top: 3%;
+    left: 44.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo4 {
+    position: absolute;
+    top: 3%;
+    left: 57.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo5 {
+    position: absolute;
+    top: 20%;
+    left: 78.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo6 {
+    position: absolute;
+    top: 35%;
+    left: 78.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo7 {
+    position: absolute;
+    top: 55%;
+    left: 78.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo8 {
+    position: absolute;
+    top: 70%;
+    left: 78.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo9 {
+    position: absolute;
+    top: 85%;
+    left: 69%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo10 {
+    position: absolute;
+    top: 85%;
+    left: 56.5%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo11 {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo12 {
+    position: absolute;
+    top: 85%;
+    left: 29%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo13 {
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    height: 4%;
+    width: 5%;
+}
+
+.photo14 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 19.5%;
+    left: 84.3%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span.rise-shake {
+    animation: jump-shaking 2s infinite;
+}
+
+span.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+
+.photo15 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+span1 {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 42%;
+    left: 73%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span1.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span1.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span1.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span1.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span1.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span1.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span1.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span1.rise-shake {
+    animation: jump-shaking 1s infinite;
+}
+
+span1.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span1.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+
+.photo16 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+span2 {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 49.5%;
+    left: 61.5%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span2.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span2.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span2.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span2.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span2.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span2.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span2.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span2.rise-shake {
+    animation: jump-shaking 4s infinite;
+}
+
+span2.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span2.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+.photo17 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+span3 {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 70.5%;
+    left: 50%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span3.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span3.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span3.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span3.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span3.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span3.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span3.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span3.rise-shake {
+    animation: jump-shaking 0.83s infinite;
+}
+
+span3.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span3.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    section {
+        background-size: 100% 55%;
+    }
+
+    .photo1 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo2 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo3 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo4 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo5 {
+        top: 12%;
+        height: 3%;
+    }
+
+    .photo6 {
+        top: 26.5%;
+        height: 3%;
+    }
+
+    .photo7 {
+        top: 30.5%;
+        height: 3%;
+    }
+
+    .photo8 {
+        top: 43.5%;
+        height: 3%;
+    }
+
+    .photo9 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo10 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo11 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo12 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo13 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    span {
+        height: 2.5%;
+        width: 10%;
+        top: 12.5%;
+        box-shadow: 4px 4px;
+    }
+
+    span1 {
+        height: 2.5%;
+        width: 10%;
+        top: 26.5%;
+        left: 74%;
+        box-shadow: 4px 4px;
+    }
+
+    span2 {
+        height: 2.5%;
+        width: 10%;
+        top: 31.4%;
+        left: 63.5%;
+        box-shadow: 4px 4px;
+    }
+
+    span3 {
+        height: 2.5%;
+        width: 10%;
+        top: 44.5%;
+        left: 53%;
+        box-shadow: 4px 4px;
+    }
+
+}

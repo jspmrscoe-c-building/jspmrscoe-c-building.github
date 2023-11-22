@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dark and Light Mode Example</title>
+    <h>HIIII OMIIII</h>
+    <style>
+        body {
+            /* Default light mode colors */
+            background-color: #ffffff;
+            color: #000000;
+        }
+        h{
+            color: #000000;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .dark-mode {
+            /* Dark mode colors */
+            background-color: #222222;
+            color: #ffffff;
+        }
+
+        #mode-toggle {
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: #000000;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            float: right;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #mode-toggle:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        #mode-toggle.dark:before {
+            transform: translateX(40px);
+            background-color: #eeeeee;
+        }
+
+        .moon {
+            position: absolute;
+            top: 7px;
+            left: 9px;
+        }
+
+        .sun {
+            position: absolute;
+            top: 7px;
+            right: 7px;
+        }
+        .dark-mode h{
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="mode-toggle" onclick="toggleMode()">
+        <img class="moon" src="moon.png" alt="Moon" width="24" height="24">
+        <img class="sun" src="sun.png" alt="Sun" width="24" height="24">
+    </button>
+
+    <script>
+        function toggleMode() {
+            var body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("dark-mode");
+
+            var modeToggle = document.getElementById("mode-toggle");
+            modeToggle.classList.toggle("dark");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.rscoee {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+}
+
+.rscoe {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #ff641f;
+    font-weight: lighter;
+}
+
+
+/* === BASE HEADING === */
+
+h1 {
+    position: relative;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* === HEADING STYLE #1 === */
+.one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.one h1:before {
+    width: 50px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 48%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+
+.one h1:after {
+    width: 123px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 48%;
+    margin-left: -50px;
+    background-color: #b80000;
+}
+
+
+
+section {
+    position: relative;
+    top: 100px;
+    height: 900px;
+    width: 100%;
+    background-position: 100% 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+
+.image-1 {
+    background-image: url("1st floor.png");
+}
+
+
+.photo1 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo2 {
+    position: absolute;
+    top: 3%;
+    left: 25.5%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo3 {
+    position: absolute;
+    top: 3%;
+    left: 51%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo4 {
+    position: absolute;
+    top: 3%;
+    left: 87%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo5 {
+    position: absolute;
+    top: 22%;
+    left: 87%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo6 {
+    position: absolute;
+    top: 40%;
+    left: 87.7%;
+    height: 3.5%;
+    width: 3.5%;
+}
+
+.photo7 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    height: 3.5%;
+    width: 3.5%;
+}
+
+.photo8 {
+    position: absolute;
+    top: 85%;
+    left: 46.5%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo9 {
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo10 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    height: 4%;
+    width: 4%;
+}
+
+.photo11 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 61.5%;
+    left: 84.3%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span.rise-shake {
+    animation: jump-shaking 0.83s infinite;
+}
+
+span.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+
+.photo12 {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+span1 {
+    position: relative;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 15px;
+    height: 4%;
+    width: 11%;
+    top: 83.5%;
+    left: 73%;
+    display: inline-block;
+    box-shadow: 8px 8px;
+}
+
+span1.strong-hover-shake:hover {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+span1.gentle-hover-shake:hover {
+    animation: tilt-shaking 0.25s infinite;
+}
+
+span1.gentle-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+span1.strong-tilt-move-shake:hover {
+    animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+span1.constant-tilt-shake {
+    animation: tilt-shaking 0.3s infinite;
+}
+
+span1.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+span1.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+span1.rise-shake {
+    animation: jump-shaking 0.83s infinite;
+}
+
+span1.skew-shake-x {
+    animation: skew-x-shake 1.3s infinite;
+}
+
+span1.skew-shake-y {
+    animation: skew-y-shake 1.3s infinite;
+}
+
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+
+
+@media (max-width: 769px) {
+
+    .rscoee {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .rscoe {
+        font-size: 8px;
+    }
+
+    .left img {
+        width: 65%;
+        height: 100%;
+    }
+
+    .right img {
+        width: 65%;
+        height: 100%;
+    }
+
+    section {
+        background-size: 100% 55%;
+    }
+
+    .photo1 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo2 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo3 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo4 {
+        top: 2%;
+        height: 3%;
+    }
+
+    .photo5 {
+        top: 14%;
+        height: 3%;
+    }
+
+    .photo6 {
+        top: 25%;
+        height: 2.5%;
+    }
+
+    .photo7 {
+        top: 43%;
+        height: 3%;
+    }
+
+    .photo8 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo9 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .photo10 {
+        top: 52.8%;
+        height: 3%;
+    }
+
+    .arrow {
+        position: relative;
+        top: 22rem;
+        left: 88%;
+        margin-left: -20px;
+        width: 9%;
+        height: 16px;
+        background-image: url(Explore\ Lab.png);
+        background-size: contain;
+    }
+
+    span {
+        height: 3%;
+        width: 10%;
+        top: 38.7%;
+        left: 85%;
+    }
+    span1 {
+        height: 3%;
+        width: 10%;
+        top: 52.3%;
+        left: 74.5%;
+    }
+}
+
+@media (max-width: 830px) and (min-width: 769px) {
+    body {
+        background-color: aqua;
+    }
+
+    .rscoee {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .rscoe {
+        font-size: 10px;
+    }
+
+    .left img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .right img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .arrow {
+        position: relative;
+        left: 88%;
+        margin-left: -35px;
+        width: 13%;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 992px) and (min-width: 831px) {
+    body {
+        background-color: goldenrod;
+    }
+
+    .rscoee {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .rscoe {
+        font-size: 10px;
+    }
+
+    .left img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .right img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .arrow {
+        position: relative;
+        left: 88%;
+        margin-left: -42px;
+        width: 13%;
+        height: 29px;
+    }
+}

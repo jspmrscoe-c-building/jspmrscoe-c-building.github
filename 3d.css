@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+.box{
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+} 
+
+.box .card{
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform-style: preserve-3d;
+}
