@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+body {
+    width: 100%;
+    height: 160vh;
+    margin: 0%;
+    background-color: #000000;
+}
+
+
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.rscoee {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+}
+
+.rscoe {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #ff641f;
+    font-weight: lighter;
+}
+
+
+/*SEARCHBOX*/
+
+.container {
+    position: relative;
+    top: -52px;
+    float: right;
+}
+
+.wrapper {
+    text-align: center;
+    width: 300px;
+    z-index: 1px;
+    max-height: 140px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    background: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px 7px rgba(255, 255, 255, 0.428);
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0px;
+    border-radius: 3px;
+    border: 1px solid #ff0000;
+    ;
+
+}
+
+
+input {
+    opacity: 1;
+    pointer-events: auto;
+    width: 83.5%;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 40px 0px 10px;
+    font-size: 15px;
+    box-shadow: 0px 1px 4px rgba(223, 206, 206, 0.574);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.results {
+    padding: 0px;
+}
+
+.results ul {
+    margin: 0;
+    padding: 0;
+}
+
+.results ul li {
+    list-style: none;
+    border-radius: 3px;
+    opacity: 0;
+    display: none;
+    padding: 8px 12px;
+    transition: all .5s linear;
+}
+
+.show .results ul li {
+    opacity: 1;
+    display: block;
+}
+
+.show .results {
+    padding: 10px;
+}
+
+.results ul li:hover {
+    background: #c0bdbd
+}
+
+
+
+
+/*SELECT THE FLOOR ANIMATION*/
+.animate-charcter {
+    position: relative;
+    top: 0%;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    text-align: center !important;
+    text-transform: uppercase;
+    background-image: linear-gradient(208deg,
+            #db1313 10%,
+            #44107a 15%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: center-block;
+    font-size: 50px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/* NAVBAR*/
+header {
+    position: relative;
+    top: 3vh;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background: #202020;
+}
+
+.subnav-content {
+    font-size: 15px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: none;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+
+
+.slider {
+    top: 40px;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    z-index: -1;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.img3 {
+    width: 100%;
+    height: 1000%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+
+
+.slider img:first-child {
+    z-index: 0;
+}
+
+.slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+@media (max-width: 769px) {
+
+    .slider img {
+        height: 100%;
+    }
+
+    .rscoee {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .rscoe {
+        font-size: 8px;
+    }
+
+    .left img {
+        width: 65%;
+        height: 100%;
+    }
+
+    .right img {
+        width: 65%;
+        height: 100%;
+    }
+
+    .animate-charcter {
+        font-size: 35px;
+    }
+
+    .container {
+        top: 69px;
+    }
+
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+
+    .slider img {
+        height: 100%;
+    }
+
+    .rscoee {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .rscoe {
+        font-size: 10px;
+    }
+
+    .left img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .right img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .container {
+        top: 69px;
+    }
+
+}
