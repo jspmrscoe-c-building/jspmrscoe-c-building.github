@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="power_electronics_lab.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Experiments</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Experiments <i class="bi bi-stars"></i></div>
+
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+
+    <input type="checkbox" id="btn" />
+
+    <ul>
+      <li><a href="index.html" target="_blank">Home</a></li>
+
+      <li>
+        <label for="btn-1" class="show">2nd Year <i class="bi bi-chevron-double-down"></i></label>
+        <a href="#">2nd Year <i class="fas fa-caret-down"></i></a>
+        <input type="checkbox" id="btn-1" />
+        <ul>
+          <!-- <li><a href="EMI.html" target="_blank">EMI</a></li> -->
+          <!-- <li><a href="#"></a></li> -->
+          <li><a href="pe.html" target="_blank">PE</a></li>
+          <li><a href="adc.html" target="_blank">ADC</a></li>
+          <li><a href="na.html" target="_blank">NA</a></li>
+
+
+
+
+        </ul>
+      </li>
+
+      <li>
+        <label for="btn-2" class="show">3rd Year <i class="bi bi-chevron-double-down"></i></label>
+        <a href="#">3rd Year <i class="fas fa-caret-down"></i></a>
+        <input type="checkbox" id="btn-2" />
+        <ul>
+          <!-- <li><a href="#">EMIT</a></li> -->
+          <li><a href="lab/2nd/1sem/na.html" target="_blank">EDI-1</a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <label for="btn-3" class="show">4th Year <i class="bi bi-chevron-double-down"></i></label>
+        <a href="#">4th Year <i class="fas fa-caret-down"></i></a>
+        <input type="checkbox" id="btn-3" />
+        <ul>
+          <!-- <li><a href="#">DCS</a></li>
+          <li><a href="#">cs</a></li>
+          <li><a href="#">ss</a></li>
+          <li><a href="#">IPS</a></li>
+          <li><a href="#">PSOC</a></li> -->
+        </ul>
+      </li>
+
+
+    </ul>
+  </nav>
+
+
+  <div class="slider">
+    <img id="img-1" src="Welcome to power electronics lab.gif" alt="Image 1" />
+    <img id="img-2"
+      src="PE_2.jpg"
+      alt="Image 2" />
+
+    <div class="navigation-button">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+    </div>
+
+</body>
+<script src="power_electronics_lab.js"></script>
+
+</html>

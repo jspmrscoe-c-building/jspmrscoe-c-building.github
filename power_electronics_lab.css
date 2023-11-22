@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    background-color: #000000;
+    min-height: 135vh;
+  }
+  
+  nav {
+    background: #000000;
+    z-index: 1;
+  }
+  
+  nav:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  nav .logo {
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 70px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    /* background: #222;
+    margin: 0 5px; */
+  }
+  
+  nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  nav ul li a:hover {
+    color: #23dbdb;
+    background: #202020;
+  }
+  /* 
+  nav ul li a:before {
+    transition: 0.5s ;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    opacity: 0;
+    left: 50%;
+    right: 50%;
+    content:icon;
+    background-color: #ffffff;
+  }
+  nav ul li a:hover:before {
+    transition: 0.5s all ease;
+    left: 0%;
+    right: 0%;
+    opacity: 1;
+    z-index: -1;
+  } */
+  
+  nav ul ul {
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .5s linear;
+  }
+  
+  nav ul ul li {
+    width: 150px;
+    display: block;
+    position: relative;
+    text-align: center;
+    border: 0.5px solid #1f1f1f;
+    border-top: none;
+  }
+  
+  nav ul ul li a {
+    line-height: 50px;
+    width: 148px;
+  }
+  
+  nav ul ul ul {
+    border-top: none;
+  }
+  
+  nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 150px;
+  }
+  
+  .show,
+  .icon,
+  input {
+    display: none;
+  }
+  
+  .fa-plus {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  
+  
+  
+  .slider {
+    top: 50px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+  }
+  
+  .img3 {
+    width: 100%;
+    height: 1000%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+  }
+  
+  
+  
+  .slider img:first-child {
+    z-index: 0;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+  
+  .navigation-button {
+    text-align: center;
+    position: relative;
+    top: 550px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  @media all and (max-width: 769px) {
+  
+    body {
+      min-height: 100vh;
+    }
+  
+  
+    nav ul {
+      margin-right: 0px;
+      float: left;
+    }
+  
+    nav .logo {
+      padding-left: 30px;
+      width: 100%;
+    }
+  
+    .show+a,
+    ul {
+      display: none;
+    }
+  
+    nav ul li,
+    nav ul ul li {
+      display: block;
+      width: 100%;
+    }
+  
+    .show {
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  
+    .show:hover {
+      color: crimson;
+    }
+  
+    .icon {
+      display: block;
+      color: #db2323;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
+    }
+  
+    nav ul ul {
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    nav ul ul a {
+      text-align: center;
+    }
+  
+    nav ul ul ul a {
+      padding-left: 80px;
+    }
+  
+    nav ul ul ul li {
+      position: static;
+    }
+  
+    [id^=btn]:checked+ul {
+      display: block;
+    }
+  
+    nav ul ul li {
+      border-bottom: 0px;
+    }
+  
+    
+  nav ul ul li a {
+    width: 20rem;
+  }
+  
+    .slider img {
+      height: 50%;
+      top: 180px;
+    }
+  
+    .navigation-button {
+      top: -20px;
+    }
+  
+  }
